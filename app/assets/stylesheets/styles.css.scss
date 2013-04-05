@@ -9,10 +9,11 @@ body {
 
 @import 'bootstrap-responsive';
 
+
 .navbar-inner {
-	@include box-shadow(none !important);
-	border: 2;
+	background: url('/assets/textured_paper.png');
 }
+
 
 .footer {
 	margin-top: 50px;

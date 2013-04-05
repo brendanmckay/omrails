@@ -5,7 +5,7 @@ Omrails::Application.routes.draw do
   #devise_for :users
   devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
 
-  root :to => 'pages#home'
+  root :to => 'pins#index'
   get "about" => 'pages#about'
 
   # The priority is based upon order of creation:

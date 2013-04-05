@@ -7,22 +7,23 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="/">Brendan</a>
+      <a class="brand" href="/">FotoShare</a>
 
-      <div class="nav-collapse">
-        <ul class="nav">
-          <li><%= link_to 'Home',  root_path %></li>
-          <li><%= link_to 'About',  about_path %></li>
-        </ul>                
-        <ul class="nav pull-right">
-          <% if user_signed_in? %>
-            <li><%= link_to 'Add +', new_pin_path %> </li>
-            <li><%= link_to 'Edit Profile', edit_user_registration_path %> </li>
-            <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %> </li>
-          <% else %>             
-            <li><%= link_to 'Login', new_user_session_path %></li>   
-          <% end %>      
-        </ul>           
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to 'Home',  root_path %></li>
+            <li><%= link_to 'About',  about_path %></li>
+          </ul>                
+          <ul class="nav pull-right">
+            <% if user_signed_in? %>
+              <li><button class="btn"> <%= link_to '<i class="icon-pencil"></i>' .html_safe, new_pin_path %></button> </li>
+              <li><%= link_to 'Edit Profile', edit_user_registration_path %> </li>
+              <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %> </li>
+            <% else %>             
+              <li><%= link_to 'Login', new_user_session_path %></li>   
+            <% end %>      
+          </ul>
+         </div>           
         </div>         
     </div>
 </div>
