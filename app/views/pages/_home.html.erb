@@ -1,10 +1,32 @@
 <% if user_signed_in? %>
 <% else %>
-<div class="center hero-unit">
-    <h1>Welcome</h1>
- 		<p>to FotoShare</p>
+<div class="test">
+    <center>
+    <h1>Welcome to Cloud EconoMe</h1></p>
+    	<br />
+		<div class="welcome">
+ 			<p>The <img src="http://bitcoin.org/img/logotop.svg" class="img-rounded"> community. </p>
+ 		</div>
+ 		<br />
 		<p><%= link_to 'Sign up now!', new_user_registration_path, class: "btn btn-large btn-primary" %></p>
-	</div>
+	</center>
+</div>
+
+<div class='test'>
+	<center>
+	<form class="form-inline">
+  <input type="text" class="input-small" placeholder="Email">
+  <input type="password" class="input-small" placeholder="Password">
+  <label class="checkbox">
+    <input type="checkbox"> Remember me
+  </label>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+</center>
+</center>
+
+</div>
+
 <% end %>
 
 

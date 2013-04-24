@@ -1,19 +1,56 @@
-$btnPrimaryBackground: green;
+$btnPrimaryBackground: #e78406;
+$btnPrimaryBackgroundHighlight: #ce7605;
+$navbarBackground: #2c6fad;
+$navbarBackgroundHighlight: #2c6fad;
+$navbarLinkColor: white;
+$navbarLinkColorHover: #e78406;
+$navbarBrandColor: #e78406;
 
 
 @import 'bootstrap';
 
+
+
 body {
 	padding-top: 60px;
+	background-image: url('bg.png');
 }
 
 @import 'bootstrap-responsive';
 
+.welcome img {margin-top: -25px;}
+
+.footer {margin-right: 25px;}
+
+.well {background-color: white;}
 
 .navbar-inner {
-	background: url('/assets/textured_paper.png');
+	padding-top: 3px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #999;
+	
+	background-image: linear-gradient(to bottom,#2c6fad, #225584);
+	text-align: center;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.4);
 }
 
+.test {
+	padding: 30px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 30px;
+	color: inherit;
+	background-color: white;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+
+}
 
 .footer {
 	margin-top: 50px;
